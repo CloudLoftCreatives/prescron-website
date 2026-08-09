@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const posts = [
   {
@@ -65,6 +66,8 @@ const posts = [
 ]
 
 export default function BlogPage() {
+  useScrollReveal()
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

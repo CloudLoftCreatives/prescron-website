@@ -10,6 +10,7 @@ import PrivacyPage from './pages/PrivacyPage'
 import ScreenshotsPage from './pages/ScreenshotsPage'
 import FAQPage from './pages/FAQPage'
 import BlogPage from './pages/BlogPage'
+import BlogPostPage from './pages/BlogPostPage'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/screenshots" element={<ScreenshotsPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
           </Routes>
         </div>
         <Footer />

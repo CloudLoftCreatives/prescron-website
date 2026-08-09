@@ -4,18 +4,25 @@ import https from 'https'
 
 const domain = 'https://www.prescron.com'
 
-const routes = [
+const baseRoutes = [
   '/',
   '/features',
   '/privacy',
   '/how-it-works',
   '/screenshots',
   '/faq',
-  '/blog',
-  '/blog/on-device-ai-future-of-privacy',
-  '/blog/introducing-prescron-llm',
-  '/blog/danger-of-cloud-document-processing'
+  '/blog'
 ]
+
+// Dynamically generate blog post routes
+const blogDir = path.join(process.cwd(), 'public', 'blog')
+let blogRoutes = []
+if (fs.existsSync(blogDir)) {
+  const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'))
+  blogRoutes = files.map(file => '/blog/' + file.replace('.md', ''))
+}
+
+const routes = [...baseRoutes, ...blogRoutes]
 
 const today = new Date().toISOString().split('T')[0]
 
