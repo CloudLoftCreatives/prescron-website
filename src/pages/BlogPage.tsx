@@ -19,6 +19,48 @@ const posts = [
     date: 'July 15, 2026',
     excerpt: 'When you upload a document to a cloud AI, who really owns that data? Understanding the hidden terms of service in modern tech.',
     slug: 'danger-of-cloud-document-processing'
+  },
+  {
+    title: 'How Quantization Makes Edge Computing Possible',
+    date: 'July 10, 2026',
+    excerpt: 'Understanding the math behind shrinking billion-parameter models to fit into your pocket.',
+    slug: 'quantization-edge-computing'
+  },
+  {
+    title: 'The End of Data Mining: A New Era for Consumers',
+    date: 'July 5, 2026',
+    excerpt: 'Why the era of free services exploiting user data is coming to an end, and what replaces it.',
+    slug: 'end-of-data-mining'
+  },
+  {
+    title: 'Why We Chose Local Vector Databases over Cloud Vectors',
+    date: 'June 28, 2026',
+    excerpt: 'The engineering decisions behind building an offline retrieval-augmented generation (RAG) pipeline.',
+    slug: 'why-we-chose-local-vector-dbs'
+  },
+  {
+    title: 'Mobile NPUs Explained: The Silicon Revolution',
+    date: 'June 20, 2026',
+    excerpt: 'How Neural Processing Units are changing the landscape of mobile computing and AI.',
+    slug: 'mobile-npus-explained'
+  },
+  {
+    title: 'Securing Your Digital Vault: AES-256 on Mobile',
+    date: 'June 12, 2026',
+    excerpt: 'An overview of encryption standards and how hardware-backed keystores protect your documents.',
+    slug: 'securing-your-digital-vault'
+  },
+  {
+    title: 'AI Without the Internet: Designing for the Dead Zone',
+    date: 'June 5, 2026',
+    excerpt: 'Building robust applications that assume zero connectivity from the ground up.',
+    slug: 'ai-without-internet'
+  },
+  {
+    title: 'The Future of Personal Intelligence',
+    date: 'May 30, 2026',
+    excerpt: 'Looking ahead: How AI will evolve from a generic assistant to a hyper-personalized, private intelligence.',
+    slug: 'future-of-personal-intelligence'
   }
 ]
 

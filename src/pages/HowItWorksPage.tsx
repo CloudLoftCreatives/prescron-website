@@ -1,6 +1,9 @@
 import { useEffect } from 'react'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function HowItWorksPage() {
+  useScrollReveal()
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

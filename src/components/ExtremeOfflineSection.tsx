@@ -53,7 +53,7 @@ export default function ExtremeOfflineSection() {
             Works anywhere.<br />Literally anywhere.
           </h2>
           <p className="text-white/60 text-xl leading-relaxed font-light max-w-2xl mx-auto">
-            No cloud means no connectivity required. Whether you're in a dead zone, on a flight, or in the most remote corners of the Earth — your document intelligence is always online.
+            No cloud means no connectivity required. Whether you're in a dead zone, on a flight, or in the most remote corners of the Earth - your document intelligence is always online.
             <br /><br />
             <span className="text-white font-medium">If your phone works, Prescron works.</span>
           </p>
