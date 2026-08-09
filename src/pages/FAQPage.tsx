@@ -1,0 +1,29 @@
+import { useEffect } from 'react'
+import FAQ from '../components/FAQ'
+import DownloadCTA from '../components/DownloadCTA'
+
+export default function FAQPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed')
+        }
+      })
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
+    
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el)
+    })
+    
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <main className="pt-[76px]">
+      <FAQ />
+      <DownloadCTA />
+    </main>
+  )
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prescron.app/sitemap.xml
+
+# Prescron — Private AI Document Vault
+# https://prescron.app
