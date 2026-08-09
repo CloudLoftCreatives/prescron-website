@@ -49,15 +49,5 @@ if (!fs.existsSync(path.join(process.cwd(), 'dist'))) {
 fs.writeFileSync(destPath, sitemap.trim())
 console.log(`✅ Sitemap successfully generated at ${destPath}`)
 
-// Ping search engines
-const pingEngine = (engineUrl) => {
-  https.get(engineUrl, (res) => {
-    console.log(`✅ Pushed to ${engineUrl}: Status ${res.statusCode}`)
-  }).on('error', (err) => {
-    console.error(`❌ Failed to push to ${engineUrl}: ${err.message}`)
-  })
-}
+// Removed deprecated search engine pinging to prevent Vercel build hangs
 
-// Automatically ping Google and Bing
-pingEngine(`https://www.google.com/ping?sitemap=${domain}/sitemap.xml`)
-pingEngine(`https://www.bing.com/ping?sitemap=${domain}/sitemap.xml`)
