@@ -12,18 +12,18 @@ export default function FinalCTA() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto text-center">
           <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#20C997] mb-6">Get Started</p>
           <h2 className="font-display font-bold text-white tracking-tight leading-[1.02] mb-8"
               style={{ fontSize: 'clamp(40px, 7vw, 80px)' }}>
             Your documents<br />
             deserve a private home.
           </h2>
-          <p className="text-white/50 text-lg leading-relaxed mb-10 max-w-xl">
+          <p className="text-white/50 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
             Store them. Understand them. Ask them. Keep them with you.
           </p>
 
-          <div className="flex flex-wrap gap-4 items-center">
+          <div className="flex flex-wrap justify-center gap-4 items-center">
             <a
               href={GOOGLE_PLAY_URL}
               id="final-get-prescron-cta"
