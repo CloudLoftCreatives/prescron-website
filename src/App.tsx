@@ -12,6 +12,7 @@ import FAQPage from './pages/FAQPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import NotFoundPage from './pages/NotFoundPage'
+import ComingSoonPage from './pages/ComingSoonPage'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/early-access" element={<ComingSoonPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

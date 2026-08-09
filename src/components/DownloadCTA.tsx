@@ -1,4 +1,4 @@
-const GOOGLE_PLAY_URL = 'GOOGLE_PLAY_URL'
+const GOOGLE_PLAY_URL = '/early-access'
 
 function GooglePlayBadgeLarge() {
   return (

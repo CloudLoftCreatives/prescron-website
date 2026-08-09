@@ -1,4 +1,4 @@
-const GOOGLE_PLAY_URL = 'GOOGLE_PLAY_URL'
+const GOOGLE_PLAY_URL = '/early-access'
 
 export default function FinalCTA() {
   return (
@@ -30,12 +30,6 @@ export default function FinalCTA() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3.5 bg-white hover:bg-white/90 text-[#111827] font-semibold px-6 py-3.5 rounded-xl transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5"
-              onClick={(e) => {
-                if (GOOGLE_PLAY_URL === 'GOOGLE_PLAY_URL') {
-                  e.preventDefault()
-                  document.querySelector('#google-play')?.scrollIntoView({ behavior: 'smooth' })
-                }
-              }}
             >
               {/* Play Store icon */}
               <svg viewBox="0 0 24 24" className="w-5 h-5 flex-shrink-0" aria-hidden="true">

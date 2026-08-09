@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
 
-const GOOGLE_PLAY_URL = 'GOOGLE_PLAY_URL'
+const GOOGLE_PLAY_URL = '/early-access'
 
 function GooglePlayBadge({ className = '' }: { className?: string }) {
   return (
