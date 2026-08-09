@@ -1,6 +1,6 @@
 # Future Of Personal Intelligence
 
-![Cover Image](/assets/ss_gallery_1.png)
+![Cover Image](/assets/prescroncom1.png)
 
 > **Executive Summary:** This article provides a comprehensive technical exploration into the mechanics and philosophy of on-device artificial intelligence. We explore the architectural shifts necessary to bring cloud-level computation directly to the edge, protecting privacy without sacrificing capability.
 

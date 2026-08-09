@@ -17,9 +17,19 @@ const slugs = [
 const baseParagraph = `Artificial Intelligence is rapidly evolving, but the traditional paradigm of cloud-based computation is fundamentally flawed when it comes to user privacy and data sovereignty. By processing complex neural network operations directly on edge devices—specifically modern mobile processors—we eliminate the need to transmit sensitive user data across the open internet to centralized server farms. This architecture not only mitigates the risk of catastrophic data breaches but also fundamentally changes the power dynamic of data ownership. When the intelligence resides on the device, the user retains absolute control. The technical challenges involved in achieving this are significant, primarily centered around memory constraints, battery life, and thermal limitations. However, through aggressive model quantization, specialized hardware accelerators like Neural Processing Units (NPUs), and highly optimized retrieval-augmented generation (RAG) pipelines leveraging local vector databases, it is now possible to achieve near cloud-level intelligence entirely offline.`
 
 // Function to generate a ~6000 word markdown file with beautiful designs
-function generateLongArticle(title) {
+function generateLongArticle(title, index) {
   let content = '# ' + title + '\n\n'
-  content += '![Cover Image](/assets/ss_gallery_1.png)\n\n'
+  
+  const images = [
+    '/assets/ss_gallery_1.png',
+    '/assets/ss_gallery_2.png',
+    '/assets/ss_gallery_3.png',
+    '/assets/prescroncom.png',
+    '/assets/prescroncom1.png'
+  ]
+  const image = images[index % images.length]
+  
+  content += `![Cover Image](${image})\n\n`
   content += '> **Executive Summary:** This article provides a comprehensive technical exploration into the mechanics and philosophy of on-device artificial intelligence. We explore the architectural shifts necessary to bring cloud-level computation directly to the edge, protecting privacy without sacrificing capability.\n\n'
   content += '## 1. Introduction to the Edge Paradigm\n\n'
   
@@ -76,9 +86,9 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir, { recursive: true })
 }
 
-slugs.forEach(slug => {
+slugs.forEach((slug, index) => {
   const title = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
-  const content = generateLongArticle(title)
+  const content = generateLongArticle(title, index)
   fs.writeFileSync(path.join(dir, slug + '.md'), content)
   console.log('✅ Generated ' + slug + '.md')
 })

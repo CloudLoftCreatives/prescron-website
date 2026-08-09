@@ -74,7 +74,7 @@ export default function BlogPostPage() {
 
   if (!meta) {
     return (
-      <div className="pt-32 pb-32 bg-[#080c14] min-h-screen flex items-center justify-center text-white">
+      <div className="pt-32 pb-32 bg-white min-h-screen flex items-center justify-center text-slate-900">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Post not found</h1>
           <Link to="/blog" className="text-[#20C997] hover:underline">Return to Blog</Link>
@@ -84,7 +84,7 @@ export default function BlogPostPage() {
   }
 
   return (
-    <article className="pt-32 pb-32 bg-[#080c14] min-h-screen text-white">
+    <article className="pt-32 pb-32 bg-white min-h-screen text-slate-900">
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         
         <Link to="/blog" className="inline-flex items-center gap-2 text-[#20C997] font-semibold text-sm uppercase tracking-wider mb-12 hover:opacity-80 transition-opacity">
@@ -95,8 +95,8 @@ export default function BlogPostPage() {
         </Link>
 
         <header className="mb-16">
-          <time className="text-sm font-medium tracking-wider text-white/50 uppercase mb-6 block">{meta.date}</time>
-          <h1 className="font-display font-bold text-white tracking-tight leading-[1.05] mb-8" style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}>
+          <time className="text-sm font-medium tracking-wider text-slate-500 uppercase mb-6 block">{meta.date}</time>
+          <h1 className="font-display font-bold text-slate-900 tracking-tight leading-[1.05] mb-8" style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}>
             {meta.title}
           </h1>
         </header>
@@ -106,7 +106,7 @@ export default function BlogPostPage() {
             <div className="w-8 h-8 border-2 border-[#20C997] border-t-transparent rounded-full animate-spin"></div>
           </div>
         ) : (
-          <div className="prose prose-invert prose-lg max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-[#20C997] prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl">
+          <div className="prose prose-slate prose-lg max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-[#20C997] prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl">
             <Markdown>{content}</Markdown>
           </div>
         )}
