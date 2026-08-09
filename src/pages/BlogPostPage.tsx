@@ -106,7 +106,7 @@ export default function BlogPostPage() {
             <div className="w-8 h-8 border-2 border-[#20C997] border-t-transparent rounded-full animate-spin"></div>
           </div>
         ) : (
-          <div className="prose prose-slate prose-lg max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-[#20C997] prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl">
+          <div className="prose prose-slate prose-lg max-w-none prose-headings:font-display prose-headings:tracking-tight prose-h2:mt-12 prose-h2:mb-6 prose-h3:mt-10 prose-h3:mb-4 prose-p:mb-8 prose-p:leading-relaxed prose-li:mb-2 prose-a:text-[#20C997] prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl">
             <Markdown>{content}</Markdown>
           </div>
         )}
