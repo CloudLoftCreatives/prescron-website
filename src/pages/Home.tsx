@@ -10,6 +10,7 @@ import PrivacySection from '../components/PrivacySection'
 import ScreenshotGallery from '../components/ScreenshotGallery'
 import FAQ from '../components/FAQ'
 import FinalCTA from '../components/FinalCTA'
+import DemoVideoSection from '../components/DemoVideoSection'
 
 export default function Home() {
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function Home() {
       <ExtremeOfflineSection />
       <ScreenshotGallery />
       <FAQ />
+      <DemoVideoSection />
       <FinalCTA />
     </main>
   )
